@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ISS Map Locator</title>
+	
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+	
+	
+	
+</head>
+
+<body>
+<!-- ISS -->
+	<button class="button2" data-modal-target="#modal2">FIND ISS HERE</button>
+	<div class="modal" id="modal2">
+		<div class="modal-header">
+		  <div class="title">Where Is The ISS Right Now ?</div>
+		  <button data-close-button class="close-button">&times;</button>
+		</div>
+		
+		<div class="modal-body">
+			<div id="mapid"></div>
+			<p class="textepetit"><i>The International Space Station</i> is moving at close to <b>28,000 km/h</b> so its location changes really fast! The current location of the ISS updates every 5 seconds.</p>
+		</div>
+		
+		</div>
+		
+		 <div id="overlay"></div>
+
+
+
+<!-- MEMBRE -->
+	<button class="button" data-modal-target="#modal">ASTRONAUTS HERE</button>
+	<div class="modal" id="modal">
+		<div class="modal-header">
+		  <div class="title">How Many People Are In Space Right Now ?</div>
+		  <button data-close-button class="close-button">&times;</button>
+		</div>
+		
+		<div class="modal-body">
+		  
+		<p> Il y a <span id="membre"></span> personnes dans l'espace :</p>
+		<!-- <div><ul id="liste"></ul></div> -->
+		
+		
+		
+		<div class="slider">
+  
+		  <div class="slides">
+			<div id="slide-1">
+			 <a href="https://en.wikipedia.org/wiki/Sergey_Ryzhikov_(cosmonaut)" target="_blank"> <img src="img/Sergey.jpg" alt="Sergey Ryzhikov" title="Sergey Ryzhikov"></a>
+			</div>
+			<div id="slide-2">
+			  <a href="https://en.wikipedia.org/wiki/Kathleen_Rubins" target="_blank"> <img src="img/Kate.jpg" alt="Kate Rubins" title="Kate Rubins"></a>
+			</div>
+			<div id="slide-3">
+			  <a href="https://en.wikipedia.org/wiki/Sergey_Kud-Sverchkov" target="_blank"> <img src="img/Sergey2.jpg" alt="Sergey Kud-Sverchkov" title="Sergey Kud-Sverchkov"></a>
+			</div>
+			<div id="slide-4">
+			  <a href="https://en.wikipedia.org/wiki/Michael_S._Hopkins" target="_blank"> <img src="img/Mike.jpg" alt="Mike Hopkins" title="Mike Hopkins"></a>
+			</div>
+			<div id="slide-5">
+			  <a href="https://en.wikipedia.org/wiki/Victor_J._Glover" target="_blank"> <img src="img/Victor.jpg" alt="Victor Glover" title="Victor Glover"></a>
+			</div>
+			<div id="slide-6">
+			  <a href="https://en.wikipedia.org/wiki/Shannon_Walker" target="_blank"> <img src="img/Shannon.jpg" alt="Shannon Walker" title="Shannon Walker"></a>
+			</div>
+			<div id="slide-7">
+			  <a href="https://en.wikipedia.org/wiki/Soichi_Noguchi" target="_blank"> <img src="img/Soichi.jpg" alt="Soichi Noguchi" title="Soichi Noguchi"></a>
+			</div>
+		  </div>
+		  
+		  <div class="espace"></div>
+		  
+		  <a href="#slide-1">1</a>
+		  <a href="#slide-2">2</a>
+		  <a href="#slide-3">3</a>
+		  <a href="#slide-4">4</a>
+		  <a href="#slide-5">5</a>
+		  <a href="#slide-6">6</a>
+		  <a href="#slide-7">7</a>
+		</div>
+		
+		  
+		  
+		  
+		  
+		</div>
+	</div>
+  <div id="overlay"></div>
+  
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+	
+    <script src='js/main.js'></script> 
+  <script src='js/membre.js'></script>
+  
+  </body>
+</html>
